@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function login_enquanto() {
+        var usuário;
+        var senha;
+        var recorrente;
+        
+        recorrente = true;
+        while (recorrente == true) {
+            usuário = window.prompt('Enter a value for usuário');
+            if (usuário == "Caio") {
+                senha = window.prompt('Enter a value for senha');
+                if (senha == "1234") {
+                    window.alert("Seja bem vindo Caio!");
+                    recorrente = false;
+                } else {
+                    window.alert("Informações de usuário incorretas");
+                }
+            }
+        }
+    }
+    function login_faca() {
+        var usuário;
+        var senha;
+        var recorrente;
+        
+        recorrente = true;
+        do {
+            usuário = window.prompt('Enter a value for usuário');
+            if (usuário == "Caio") {
+                senha = window.prompt('Enter a value for senha');
+                if (senha == "1234") {
+                    window.alert("Bem vindo Caio!");
+                    recorrente = false;
+                } else {
+                    window.alert("Senha ou usuários incorreto");
+                }
+            }
+        } while (recorrente == true);
+    }
+    
+    
+            </script>
+    
+    <button onclick="login_enquanto()">LOGIN</button>
+    <button onclick="login_faca()">LOGIN</button>
+    </body>
+</html>
