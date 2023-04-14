@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-12 12:40:28 "/>
+        <attribute name="created" value="QUxVTk87RUNFNDM2TUlDUk8wMTsyMDIzLTA0LTEyOyIxMjoyNTo1MyAiOzI0MDc="/>
+        <attribute name="edited" value="QUxVTk87RUNFNDM2TUlDUk8wMTsyMDIzLTA0LTEyOyIxMjo0MDoyOCAiOzE7MjUxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="usu&#225;rio" type="String" array="False" size=""/>
+            <declare name="senha" type="String" array="False" size=""/>
+            <declare name="recorrente" type="Boolean" array="False" size=""/>
+            <assign variable="recorrente" expression="true"/>
+            <do expression="recorrente==true">
+                <input variable="usu&#225;rio"/>
+                <if expression="usu&#225;rio==&quot;Caio&quot;">
+                    <then>
+                        <input variable="senha"/>
+                        <if expression="senha==&quot;1234&quot;">
+                            <then>
+                                <output expression="&quot;Bem vindo Caio!&quot;" newline="True"/>
+                                <assign variable="recorrente" expression="false"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Senha ou usu&#225;rios incorreto&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
